@@ -1,0 +1,36 @@
+<div class="container mx-auto mt-5 text-center mb-5" [attr.dir]="language === 'ar' ? 'rtl' : 'ltr'">
+    <!-- Title with Translation -->
+
+  
+  <!-- Carousel -->
+<owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+        <div class="carousel-item">
+            <img src="./assets/Images/bg.jpg" alt="Image 1" class="img-fluid">
+            <div class="text">
+                <h3>{{'SLIDER_TITLE' | translate}}</h3>
+                <p>{{'DESCRIPTION' | translate}}</p>
+            </div>
+        </div>
+    </ng-template>  
+    <ng-template carouselSlide>
+        <div class="carousel-item">
+            <img src="./assets/Images/bg.jpg" alt="Image 2" class="img-fluid">
+            <div class="text">
+                <h3>{{'SLIDER_TITLE' | translate}}</h3>
+                <p>{{'DESCRIPTION' | translate}}</p>
+            </div>
+        </div>
+    </ng-template>  
+    <ng-template carouselSlide>
+        <div class="carousel-item">
+            <img src="./assets/Images/bg.jpg" alt="Image 3" class="img-fluid">
+            <div class="text">
+                <h3>{{'SLIDER_TITLE' | translate}}</h3>
+                <p>{{'DESCRIPTION' | translate}}</p>
+            </div>
+        </div>
+    </ng-template>  
+</owl-carousel-o>
+
+</div>

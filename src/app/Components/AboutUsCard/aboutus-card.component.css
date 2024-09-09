@@ -1,0 +1,13 @@
+
+
+.text-center::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -10px; /* Position the line below the text; adjust as needed */
+    transform: translateX(-50%);
+    width: 8%; /* Adjust the width of the line as needed */
+    height: 3px; /* Thickness of the line */
+    background-color: var(--main-color); /* Color of the line; adjust as needed */
+}
